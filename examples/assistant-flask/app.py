@@ -116,7 +116,8 @@ def create_assistant():
         my_assistant = client.beta.assistants.create(
             instructions="You are a helpful assistant. If asked about math or computing problems, write and run code to answer the question.",
             name="MyQuickstartAssistant",
-            model="gpt-3.5-turbo",
+            #model="gpt-3.5-turbo",
+            model="gpt-4o",
             tools=[{"type": "code_interpreter"}],
         )
         assistant_id = my_assistant.id
